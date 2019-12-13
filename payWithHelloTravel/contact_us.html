@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Payments on the GO</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                        $(".tab_logo").click(function(){
+                          $(".sidenav").toggle("slow");
+                        });
+                      });
+                       	
+
+
+           </script>
+           <link rel="stylesheet" href="style.css" type="text/css">
+
+           <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+           <style>
+               * {
+                   box-sizing: border-box;
+               }
+
+               /*body h1, body, .h1{
+                font-family: 'Lato', sans-serif;
+                font-weight: 300;
+               }
+               */
+               .content {
+                   width: 60%;
+                   float: left;
+                   margin-bottom: 3%;
+                   
+                   
+                   
+               }
+               p {
+                   line-height: 25px;
+               }
+               iframe {
+                   width: 100% !important;
+               }
+               
+               
+               .fs {
+                   height: 140vh;
+                   background-color: #f4f3f5;
+               }
+
+            
+               .clearfix {
+                   clear: both;
+               }
+
+               @media screen and (min-width : 800px)
+               {
+                   #map {
+                       width: 100%;
+                       height: 425px;
+                   }
+               }
+
+               @media screen and (min-width : 1000px)
+               {
+                   .title {
+                       font-size: 4.0em;
+                       font-weight: 300;
+                       font-family: sans-serif;
+                   }
+                   .content p {
+                       font-size: 1.5em;
+                   }
+               }
+           
+           </style>
+
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="navrow">
+                <div class="navicon">
+                    <a href="http://www.hellotravel.com" alt="Hello Travel">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAAA1CAYAAAAXg+StAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpkMGFkMDhlZS1mYjY3LWRhNDAtYmYwZS1jMDFmMThkZjRmYmIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OTY3QUEzRThDNTRBMTFFNzhEMTBDRTJDOTc2QjcxOTgiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OTY3QUEzRTdDNTRBMTFFNzhEMTBDRTJDOTc2QjcxOTgiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6ODY3YTNmNzktZWJmNi1jYzQ5LWExYzYtNzBhNDkxNzI2YjVlIiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6ODA0N2RjOTctYzU0Ni0xMWU3LWExODgt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" class="icon">
+
+                    </a>
+                    </div>
+                <div style="width: 60%; float: left; height: 73px;">
+                   <ul class="navbar">
+                       <li><a href="ady 5.html" class="link">For Buyers</a></li>
+                       <li>|</li>
+                       <li><a href="FAQ.html" class="link">FAQ</a></li>
+                       <li>|</li>
+                       <li><a href="contact_us.html" class="link">Contact Us</a></li>
+                   </ul>
+                </div>
+                <div style="width: 20%; float :left;">
+                        <ul class="navtext">
+ 
+                         <li><span style="cursor: text; color: inherit; margin-left: 10px;">Call Now: 08071253899</span></li>
+                        </ul>
+                        
+                         
+                         </div> 
+
+                         <div class="nav_tab">
+                            <img src="data:image/png;base64,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" style="width: 35px;" alt="tab_logo" class="tab_logo">
+
+                        </div> 
+                        
+
+                    <div class="sidenav" role="navigation" >
+                        <ul>
+                            <li style="color : #fff;" id="mobview"></li>
+                            <li><a href="seller_hellotravel.html" class="sidenava">For Seller</a></li>
+                            <li><a href="ady 5.html" class="sidenava">For Buyer</a></li>
+                            <li><a href="contact_us.html" class="sidenava">Contact Us</a></li>
+                            <li><a href="FAQ.html" class="sidenava">FAQ</a></li>
+                            <li><a href="terms_and_conditions.html" class="sidenava">Terms & Conditions</a></li>
+                            <li><a href="privacy_policy.html" class="sidenava">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                
+                
+                  
+                    
+                    <span class="call">
+                        <a href="tel:7210863965">Call Now</a>
+                    </span>  
+                   
+                    
+                </div>
+                <div class="clearfix"></div>
+
+                <div id="intro" class="header-container fs" >
+                        <!-- <div class="bcg"></div> -->
+                        <header class="wrapper" style="color: #000;
+                padding-top: 120px;
+                position: relative;
+                top: auto;
+                transform: translate(0%, 0%);
+                left: auto;
+                margin: 0 auto;">
+                            <!-- <a href="/"><img src="img/pwiLogo.png" style="height: auto;max-width: 100%;margin-top: -15px;margin-left: 0;"></a> <br> -->
+                            <div class="content"><h1 class="title">Contact us</h1>
+                            <p>
+                            Helpline number <strong>+91 -9696969696</strong> <br>
+                            Email ID <strong>paywith@hellotravel.com</strong> <br><br>
+            
+                            Address <br>
+                            E75, E Block, Sector 63, Noida, Uttar Pradesh 201301
+            
+            
+            
+            
+            
+            
+            
+                            </p>
+                            
+                            
+                            </div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d875.5587603655833!2d77.3858362291699!3d28.62271689890134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb3d33a8833fd9bd5!2sHelloTravel!5e0!3m2!1sen!2sin!4v1552471482491" width="1200" height="450" frameborder="0" style="border:0" allowfullscreen id="map"></iframe>
+
+                                </header>
+                        </div>
+
+
+                     <div id="footerContent" class="footer-container">
+                                <footer class="wrapper">
+                                    <h3>
+                                        2019 &copy;
+                                        <a style="text-decoration : none;">Pay with Hello Travel Pvt. Ltd.</a>
+                                        |
+                                        <a href="#" target="_blank" style="text-decoration : none; color: black;">Terms & Conditions</a>
+                                        |
+                                        <a href="#" target="_blank" style="text-decoration: none; color: black;">Privacy Policy</a>
+
+                                    </h3>
+                                </footer>
+
+                        </div>
+                        <div class="clearfix"></div>
+        
+                        
+
+
+
+        </div>
+    </body>
+</html>

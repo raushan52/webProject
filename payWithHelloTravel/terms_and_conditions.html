@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Payments on the GO</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                        $(".tab_logo").click(function(){
+                          $(".sidenav").toggle("slow");
+                        });
+                      });
+                       	
+
+
+           </script>
+           <link rel="stylesheet" href="style.css" type="text/css">
+
+           <style>
+               * {
+                font-family: lato, sans-serif;
+               }
+               .title {
+                   font-weight: 300;
+                   font-size: 4.0em;
+               }
+               h1 {
+                   font-size: 2.0em;
+               }
+               p {
+                   line-height: 25px;
+               }
+
+               @media screen and (max-width : 768px)
+               {
+                   .title {
+                       font-size: 1.0em;
+                   }
+                   
+               }
+               @media screen and (max-width : 504px)
+               {
+                   #terms {
+                       padding-top: 50px;
+                   }
+               }
+           
+           </style>
+
+
+    </head>
+        <body>
+                <div class="container">
+                        <div class="navrow">
+                            <div class="navicon">
+                                <a href="http://www.hellotravel.com" alt="Hello Travel">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAAA1CAYAAAAXg+StAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpkMGFkMDhlZS1mYjY3LWRhNDAtYmYwZS1jMDFmMThkZjRmYmIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OTY3QUEzRThDNTRBMTFFNzhEMTBDRTJDOTc2QjcxOTgiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OTY3QUEzRTdDNTRBMTFFNzhEMTBDRTJDOTc2QjcxOTgiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6ODY3YTNmNzktZWJmNi1jYzQ5LWExYzYtNzBhNDkxNzI2YjVlIiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6ODA0N2RjOTctYzU0Ni0xMWU3LWExODgt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" class="icon">
+            
+                                </a>
+                                </div>
+                            <div style="width: 60%; float: left; height: 73px;">
+                               <ul class="navbar">
+                                   <li><a href="ady 5.html" class="link">For Buyers</a></li>
+                                   <li>|</li>
+                                   <li><a href="FAQ.html" class="link">FAQ</a></li>
+                                   <li>|</li>
+                                   <li><a href="contact_us.html" class="link">Contact Us</a></li>
+                               </ul>
+                            </div>
+                            <div style="width: 20%; float :left;">
+                                    <ul class="navtext">
+             
+                                     <li><span style="cursor: text; color: inherit; margin-left: 10px;">Call Now: 08071253899</span></li>
+                                    </ul>
+                                    
+                                     
+                                     </div> 
+            
+                                     <div class="nav_tab">
+                                        <img src="data:image/png;base64,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" style="width: 35px;" alt="tab_logo" class="tab_logo">
+            
+                                    </div> 
+                                    
+            
+                                <div class="sidenav" role="navigation" >
+                                    <ul>
+                                        <li style="color : #fff;" id="mobview"></li>
+                                        <li><a href="seller_hellotravel.html" class="sidenava">For Seller</a></li>
+                                        <li><a href="ady 5.html" class="sidenava">For Buyer</a></li>
+                                        <li><a href="contact_us.html" class="sidenava">Contact Us</a></li>
+                                        <li><a href="FAQ.html" class="sidenava">FAQ</a></li>
+                                        <li><a href="terms_and_conditions.html" class="sidenava">Terms & Conditions</a></li>
+                                        <li><a href="privacy_policy.html" class="sidenava">Privacy Policy</a></li>
+                                    </ul>
+                                </div>
+                            
+                            
+                              
+                                
+                                <span class="call">
+                                    <a href="tel:7210863965">Call Now</a>
+                                </span>  
+                               
+                                
+                            </div>
+                            <div class="clearfix"></div>
+
+
+                            <div id="terms" class="" style="    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10%;" >
+			<!-- <div class="bcg"></div> -->
+			<div class="">
+				<!-- <a href="/"><img src="img/pwiLogo.png" style="height: auto;max-width: 100%;margin-top: -15px;margin-left: 0;"></a> <br> -->
+				<div class="content"><h1 class="title">Term and Conditions</h1>
+				<p style="font-size: 1em;">
+				TERMS &amp; CONDITIONS OF USE
+<br><br>
+Welcome to PaywithIndiamart Private Ltd. ("PaywithIndiamart" or "Company"). These Terms of Use ("Agreement") describe the terms and conditions applicable to your access and use of the website paywithindiamart.com (the "Site"). Please ensure that you (referred to as the "User", "you" or "your") read these TERMS AND CONDITIONS OF USE with care as they govern your use of and access to this Web Site (also referred to as "Site"). 
+<br><br>
+Application and Acceptance of the Terms
+<br><br>
+Your use of the Sites and Paywith Indiamart’s services is subject to the terms and conditions contained in this document as well as the Privacy Policy and any other rules and policies of the Sites that paywithndiamart.com may publish from time to time. This document and such other rules and policies of the Sites are collectively referred to below as the “Terms”. 
+<br><br>
+BY ACCESSING THE SITES OR USING THE SERVICES, YOU AGREE TO ACCEPT AND BE BOUND BY THE TERMS.  PLEASE DO NOT USE THE SERVICES OR THE SITES IF YOU DO NOT ACCEPT ALL THE TERMS.  YOUR REMEDY FOR DISSATISFACTION WITH THIS SITE, SERVICES, CONTENT, OR OTHER INFORMATION AVAILABLE ON OR THROUGH THIS SITE, IS TO STOP USING THE SITE AND/OR THOSE SERVICES. YOUR AGREEMENT WITH US REGARDING COMPLIANCE WITH THESE TERMS & CONDITIONS OF USE BECOMES EFFECTIVE IMMEDIATELY UPON COMMENCEMENT OF YOUR USE OF THIS SITE.
+<br><br>
+We expressly reserve the right to change these Terms & Conditions of Use from time to time without notice to you. You acknowledge and agree that it is your responsibility to review this site and these Terms of Use from time to time and to familiarize yourself with any modifications. 
+We also reserve the sole right to either modify or discontinue the site, including any of the sites features, at any time with or without notice to you. We will not be liable to you or any third party should we exercise such right. Any new features that augment or enhance the then current services on this site shall also be subject to these Terms & Conditions of Use.
+<br><br>
+PaywithIndiamart is not responsible of the manner in which you use the information published on our website. While we continuously strive to maintain the quality and accuracy levels of all information on PaywithIndiamart, we do not provide any guarantee or warranty about the completeness, accuracy, punctuality or suitability of the same. By using our resources, you are acknowledging that there can be errors/inaccuracies in the content provided by other users. PaywithIndiamart, however, cannot be held liable for such errors. 
+<br><br>
+
+In case of a dispute that may arise between the Buyer and Supplier in respect to the payment/transaction and,  there remains no scope for mutual resolution or amicable settlement, then the disputed amount parked with  "PAYwithIndiaMART shall be transferred in the account of IndiaMART Intermesh Limited.
+<br><br>
+Further IndiaMART shall try to meditate/conciliate the dispute between the Buyer and Supplier and release the payment post settlement.
+<br><br>
+IndiaMART Intermesh Limited shall not be liable to pay any interest for the disputed amount for the period it is parked in its account.
+<br><br>
+TO USERS OF THIS SITE the following provisions apply:<br>
+1.	USE OF THE SITE <br>
+PaywithIndiamart is an online intermediary facilitating the sale and purchase transaction or provide any other services the Company perform for you. You represent and warrant to the Company that: (i) you are an individual or a legal person, who is at least 18 years old; (ii) all registration information you submit is accurate and truthful; and (iii) you will maintain the accuracy of such information. You also certify that you are legally permitted to use and access the Services and take full responsibility for the selection and use of and access to the Services. This Agreement or required Content of this Agreement shall be considered void, where prohibited by law, and the right to access the Services is revoked in such situations and jurisdictions. We reserve the right to terminate your membership/registration and/or refuse to provide you with access to the Services if it is brought to our notice or if it is discovered that you are under the age of 18 years. We retain the right at our sole discretion to deny access to anyone to the Site and the services we offer, at any time without notice and for any reason, including, but not limited to, for violation of these Terms of Use.
+You agree to use the Sites or Services solely for your own private and internal purposes and may only be used in accordance with the terms of this Agreement. All the Services (including, but not limited to text, graphics, articles, photographs, images, illustrations (also known as the “Content”) are protected by copyright, owned by PaywithIndiamart. You shall abide by all copyright notices, trademark rules, information, and restrictions contained in any Content accessed through the Services provided on the Website, and shall not use, copy, reproduce, modify, translate, publish, broadcast, transmit, distribute, perform, upload, display, license, sell or otherwise exploit for any purposes whatsoever, any Content or third party submissions or other proprietary rights not owned by you: (i) without the express prior written consent of the respective owners, and (ii) in any way that violates any third party rights. 
+This site may allow Users to access to content, products or services offered by third parties through hyperlinks (in the form of word link, banners, channels or otherwise) or otherwise to such third party websites. You are cautioned to read such web sites' terms and conditions and/or privacy policies before using the Sites. You acknowledge that PaywithIndiamart has no control over such third parties' web sites, and does not monitor such web sites. PaywithIndiamart shall not be responsible or liable to anyone for such web sites, or any content, products or services made available on such web sites.
+<br><br>
+2. 	 COMPANY IS AN INTERMEDIARY<br>
+PLEASE NOTE THAT THE PURCHASE OF ANY PRODUCT WITH ASSISTANCE FROM THIS WEBSITE IS A PRIVATE CONTRACT BETWEEN THE SELLER AND THE BUYER, CHOOSING TO PURCHASE SUCH PRODUCT & SERVICE. THE COMPANY IS MERELY AN ONLINE INTERMEDIARY FACILITATING THE TRANSACTION IN A LIMITED CAPACITY AND DOES NOT BEAR ANY RESPONSIBILITY FOR DELIVERY, AUTHENTICATION OR ANY OTHER KIND OF LOGISTICAL SUPPORT.
+All commercial/contractual terms are offered by and agreed to between the Buyers and Sellers alone. The Company does not have any control or does not determine or advise or in any way involve itself in the offering or acceptance of such commercial/contractual terms between Buyers and Sellers.Company does not make any representation or warranty as to specifics (such as quality, value, salability, etc.) of the Products or Services proposed to be sold or offered to be sold or purchased on the Website. Company accepts no liability for any errors or omissions, whether on behalf of itself or third parties. Company is not responsible for any non-performance or breach of any contract between the Buyers and Sellers. Company cannot and does not guarantee for the performance of any transaction concluded on the Website. Company does not make any representation or warranty as to the item-specifics (such as legal title, creditworthiness, identity, etc.) of any of its Users. Company is not an authorized agent of any Seller, Service Provider(s) or any such third party and we are only an online intermediary.
+<br><br>
+3. REGISTRATION AND SECURITY<br>
+User must be registered on the Sites to access our Services. Except with PaywithIndiamart’s approval, one User may only register one member account on the Site. PaywithIndiamart may cancel or terminate a User’s account if PaywithIndiamart has reasons to suspect that the User has concurrently registered or controlled two or more member accounts. Further, PaywithIndiamart may reject User’s application for registration for any reason. The information provided by you while availing the Services on the Website is subject to Privacy Policy of the Company displayed on the Website. The Company reserves the right to use, store, evaluate, analyze, verify, and authenticate the information and data provided by the User. User may be required to provide KYC information/details to the Company, such as electronic copies of identity proof, address proof and any other such document. You shall be responsible for maintaining the confidentiality of your password. You agree that you shall only use accounts owned by you, and not by any other person or entity. You agree that if You provide any information that is untrue, inaccurate, not current or incomplete or we have reasonable grounds to suspect that such information is untrue, inaccurate, not current or incomplete, or not in accordance with this Terms of Service, We shall have the right to indefinitely suspend or terminate your account and refuse to provide You with access to the Website. In the event, if any discrepancy is found, in case any of the information provided by the User, for example, registration information provided does not match with the adjoining documents, such mismatch shall lead to the rejection/deactivation/termination of the registration. You acknowledge that we have the right to disclose the information (if required) provided by you to the law enforcement authorities whether or not for any investigation purposes. PaywithIndiamart is committed to anti money laundering compliance in accordance with applicable laws and shall always prevent the use of products and services for money laundering, terror financing and other criminal activities.
+<br><br>4.  FEES AND PAYMENT<br>
+The Company will charge fixed rate of commission (as mentioned on website – www. paywith.indiamart.com) on each transaction done through Paywithindiamart, which it deducts from the payment made by the Payor/Buyer. The Company, at its sole discretion, reserves the right to modify the commission amount from time to time. Seller/Payee/Payor/Buyer (“User”) shall bear and be responsible for any applicable central, state, local and foreign taxes, duties, tariffs, levies, withholdings and similar assessments (including without limitation, sales taxes, use tax, value added taxes, GST). All payments need to be made online and no offline payments are permitted by the Company. 
+<br><br>5. REFUNDS, DISPUTES AND CHARGEBACKS<br>
+<b>For Buyer</b>
+<br>
+As a general rule, no refund will be provided until and unless such circumstances exist that the Company deems fit to refund the transaction money. A Buyer may submit a claim for a refund for a purchase made by emailing at (paywith@indiamart.com) and providing a clear and specific reason for the refund request and the exact terms that have been violated. Whether a refund will be provided will be determined by the Company, in its sole discretion. Refund requests must be submitted within 10 days of the purchase. In case of failure to do so by the Buyer, he/she agrees that it absolves the Company from any responsibility to facilitate the resolution of such dispute.
+<br><b>For Seller</b><br>
+A transaction may be reversed/refunded/held back or charged back to your account if it is disputed by the Buyer, reversed/refunded for any reason by the Network, deemed to be fraudulent, deemed to be in violation of this Agreement, or Company has any reason to believe that the transaction was not completed in good faith based on being marked suspicious by Pay with IndiaMART risk algorithm.
+For any transaction that results in a chargeback, the Company may withhold the transaction amount from your account. If your account has any pending resolution of any chargebacks, the Company has the discretion to delay your next payout(s). The Company reserves the right to withhold from your account the amount of one or more transactions, if it believes that there is a significantly increased risk of a chargeback occurring on these transactions. The Company may also charge you a fee for each refund, or chargeback, or dispute incurred. If your account is incurring a significantly high volume of chargebacks according to the Company, the Company reserves the right to (a) suspend your account, (b) increase processing fees, (c) withhold payouts, (d) increase holding period for your funds to be paid out. The Company reserves the right to charge a "Penalty fee" from the Users, including Buyers and Sellers, for abusing the platform, towards the charges incurred for the investigation, operational handling and legal consultation charges.
+<br><br>6.	PROHIBITED ACTIVITIES<br>
+The content and information on this Website as well as the infrastructure used to provide such content and information, is proprietary to us. Additionally, you agree not to:<br> 
+i)	provide false, inaccurate or misleading information;<br>
+ii)	use this Website or its contents for any other commercial purpose;<br>
+iii)	use PaywithIndiamart Account for any illegal activities, including but not limited to online gambling, pornography and activities which are in violation of prevalent laws;<br>
+iv)	Use PaywithIndiamart Account in a manner that may result in complaints, disputes, claims, penalties or other liability to PaywithIndiamart, other users or third parties; <br>
+v)	access, monitor or copy any content or information of this Website using any robot, spider, scraper or other automated means or any manual process for any purpose without our express written permission;<br> 
+vi)	violate the restrictions in any robot exclusion headers on this Website or bypass or circumvent other measures employed to prevent or limit access to this Website;<br>
+vii)	take any action that imposes, or may impose, in our discretion, an unreasonable or disproportionately large load on our infrastructure, website or servers;<br>
+viii)	deep-link to any portion of this Website for any purpose without our express written permission; or<br>
+ix)	'frame', 'mirror' or otherwise incorporate any part of this Website into any other website without our prior written authorization;<br>
+x)	breach these Terms of Service or such other term and policies that may be made by PaywithIndiamart from time to time in respect of your PaywithIndiamart Account.<br><br>
+Company, in our sole discretion, believes that you may have engaged in any of the above prohibited activities, we may take various actions, including but are not limited to the following:<br>
+a) 	We may suspend or restrict your access to the PaywithIndiamart Account service;<br>
+b) 	We may refuse to provide the PaywithIndiamart Account service to you;<br>
+c) 	We may take legal action against you.<br><br>
+
+7. 	YOU AGREE NOT TO SALE OR PURCHASE<br>
+i) Drugs and drug paraphernalia which includes illegal drugs and drug accessories, including herbal drugs like salvia and magic mushrooms; 
+<br>
+ii) Drug test circumvention aids which includes drug cleansing shakes, urine test additives, and related items; 
+<br>
+iii) Prescription drugs or herbal drugs or any kind of online pharmacies which includes drugs or other products requiring a prescription by a licensed medical practitioner.
+
+<br><br>
+8. 	CONFIDENTIALITY<br>
+Any information which is specifically mentioned by PaywithIndiamart as Confidential shall be maintained confidentially by the user and shall not be disclosed unless as required by law or to serve the purpose of this agreement and the obligations of both the parties therein.<br>
+<br>9. 	RESPONSIBILITY OF THE PAYWITHINDIAMART<br>
+PaywithIndiamart will not be responsible for screening, censoring or otherwise controlling transactions, including whether the transaction is legal and valid as per the laws of the land of the User. The User warrants that they will abide by all such additional procedures and guidelines, as modified from time to time, in connection with the use of the services. The User further warrants that they will comply with all applicable laws and regulations regarding use of the services with respect to the jurisdiction concerned for each transaction. User represent and confirm that the User is of legal age to enter into a binding contract and is not a person barred from availing the Services under the laws of India or other applicable law.<br>
+<br>10. 	THIRD PARTY CONTENT AND SERVICES<br>
+PaywithIndiamart may provide, on its site, links to sites operated by other entities. If the user decides to view this site, they shall do so at their own risk, subject to that site’s terms and conditions of use and privacy policy that may be different from those of this site. It is the user’s responsibility to take all protective measures to guard against viruses or other destructive elements they may encounter on these sites. PaywithIndiamart makes no warranty or representation regarding, and do not endorse any linked website or the information appearing thereon or any of the products or services described thereon. Further, user’s interactions with organizations and/or individuals found on or through our service, including payment and delivery of goods and services, and any other terms, conditions, warranties or representations associated with such dealings, are solely between the user and such organization and/or individual. The user should make whatever investigation they feel necessary or appropriate before proceeding with any offline or online transaction with any of these third parties.<br>
+<br>11. 	DISCLAIMER<br> 
+The Company shall not be responsible for any error/s or incorrect information provided by Seller; as providing the price of the Product and/or Services is the sole responsibility of the Seller. You release and indemnify Company and/or any of its officers and representatives from any cost, damage, liability or other consequence of any of the actions of the User of the Website and specifically waive any claims that you may have in this behalf under any applicable law. You may find other User's information to be offensive, harmful, inconsistent, inaccurate, or deceptive. Please use caution and practice safe trading when using the Website.
+YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT USE OF OUR WEBSITE AND THE SERVICE IS ENTIRELY AT YOUR OWN RISK AND THAT OUR WEBSITE AND THE SERVICE ARE PROVIDED ON AN "AS IS" OR "AS AVAILABLE" BASIS, WITHOUT ANY WARRANTIES OF ANY KIND. ALL EXPRESS AND IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND INFRINGEMENT OF PROPRIETARY RIGHTS ARE EXPRESSLY DISCLAIMED TO THE FULLEST EXTENT PERMITTED BY LAW. TO THE FULLEST EXTENT PERMITTED BY LAW PAYWITHINDIAMART, ITS OFFICERS, DIRECTORS, EMPLOYEES, AND AGENTS DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, IN CONNECTION WITH THE WEBSITE AND YOUR USE THEREOF. PAYWITHINDIAMART MAKES NO WARRANTIES OR REPRESENTATIONS ABOUT THE ACCURACY OR COMPLETENESS OF OUR WEBSITE'S CONTENT OR THE CONTENT OF ANY THIRD PARTY WEBSITES LINKED TO THE WEBSITE AND ASSUMES NO LIABILITY OR RESPONSIBILITY FOR ANY (I) ERRORS, MISTAKES, OR INACCURACIES OF CONTENT, (II) PERSONAL INJURY OR PROPERTY DAMAGE, OF ANY NATURE WHATSOEVER, RESULTING FROM YOUR ACCESS TO AND USE OF OUR WEBSITE AND SERVICE, (III) ANY INTERRUPTION OR CESSATION OF TRANSMISSION TO OR FROM THE WEBSITE, (IV) ANY BUGS, VIRUSES, TROJAN HORSES, OR THE LIKE WHICH MAY BE TRANSMITTED TO OR THROUGH THE WEBSITE BY ANY THIRD PARTY, AND/OR (V) ANY ERRORS OR OMISSIONS IN ANY CONTENT OR FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF ANY CONTENT POSTED, EMAILED, COMMUNICATED, TRANSMITTED, OR OTHERWISE MADE AVAILABLE VIA THE WEBSITE OR THE SERVICE. PAYWITHINDIAMART DOES NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR ANY PRODUCT OR SERVICE ADVERTISED OR OFFERED BY A THIRD PARTY THROUGH THE WEBSITE OR ANY HYPERLINKED WEBSITE OR FEATURED IN ANY BANNER OR OTHER ADVERTISING, AND PAYWITHINDIAMART WILL NOT BE A PARTY TO OR IN ANY WAY BE RESPONSIBLE FOR MONITORING ANY TRANSACTION BETWEEN YOU AND/OR OTHER USERS AND/OR THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES. AS WITH THE PURCHASE OF A PRODUCT OR SERVICE THROUGH ANY MEDIUM OR IN ANY ENVIRONMENT, YOU SHOULD USE YOUR BEST JUDGMENT AND EXERCISE CAUTION WHERE APPROPRIATE.
+<br><br>12. 	LIMITATIONS OF LIABILITY<br>	
+IN NO EVENT SHALL PAYWITHINDIAMART, ITS OFFICERS, DIRECTORS, EMPLOYEES, OR AGENTS, BE LIABLE FOR DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL DAMAGES, RESULTING FROM ANY ASPECT OF YOUR USE OF OUR WEBSITE OR THE SERVICE, INCLUDING WITHOUT LIMITATION WHETHER THE DAMAGES ARISE FROM USE OR MISUSE OF THE WEBSITE OR THE SERVICE, FROM INABILITY TO USE THE WEBSITE OR THE SERVICE, OR THE INTERRUPTION, SUSPENSION, MODIFICATION, ALTERATION, OR TERMINATION OF THE WEBSITE OR THE SERVICE.THE AGGREGATE LIABILITY OF THE COMPANY HEREUNDER WILL IN NO CASE EXCEED  FEES PAID  BY YOU TOWARDS THE USAGE OF THE SERVICES/WEBSITE FOR THE LAST TRANSACTION. SUCH LIMITATION OF LIABILITY SHALL ALSO APPLY WITH RESPECT TO DAMAGES INCURRED BY REASON OF OTHER SERVICES OR PRODUCTS RECEIVED THROUGH OR ADVERTISED IN CONNECTION WITH THE WEBSITE OR THE SERVICE OR ANY LINKS ON THE WEBSITE, AS WELL AS BY REASON OF ANY INFORMATION, OPINIONS OR ADVICE RECEIVED THROUGH OR ADVERTISED IN CONNECTION WITH THE WEBSITE OR THE SERVICE OR ANY LINKS ON THE PAYWITHINDIAMART SITE. THESE LIMITATIONS SHALL APPLY TO THE FULLEST EXTENT PERMITTED BY LAW. YOU SPECIFICALLY ACKNOWLEDGE AND AGREE THAT PAYWITHINDIAMART SHALL NOT BE LIABLE FOR USER SUBMISSIONS OR THE DEFAMATORY, OFFENSIVE, OR ILLEGAL CONDUCT OF ANY USER OR THIRD PARTY AND THAT THE RISK OF HARM OR DAMAGE FROM THE FOREGOING RESTS ENTIRELY WITH YOU.
+<br><br>13. 	INTELLECTUAL PROPERTY RIGHTS<br>
+Unless otherwise indicated or anything contained to the contrary or any proprietary material owned by a third party and so expressly mentioned, PaywithIndiamart owns all Intellectual Property Rights to and into the Website, including, without limitation, any and all rights, title and interest in and to copyright, related rights, patents, utility models, trademarks, trade names, service marks, designs, know-how, trade secrets and inventions (whether patentable or not), goodwill, source code, meta tags, databases, text, content, graphics, icons, and hyperlinks. You acknowledge and agree that you shall not use, reproduce or distribute any content from the Website belonging to PaywithIndiamart without obtaining authorization from PaywithIndiamart. Any reproduction of our website’s content (other than those in accordance with the copyright notice) is, hence, strictly prohibited.
+<br><br>14. 	INDEMNIFICATION<br>
+You agree to indemnify, defend and hold harmless PaywithIndiamart from and against any and all losses, liabilities, claims, damages, costs and expenses (including legal fees and disbursements in connection therewith and interest chargeable thereon) asserted against or incurred by PaywithIndiamart that arise out of, result from, or may be payable by virtue of, any breach or non-performance of any representation, warranty, covenant or agreement made or obligation to be performed by you pursuant to these Terms.
+<br><br>15. 	FORCE MAJEURE<br>
+We will not pay you compensation if we have to cancel any transaction done using your PaywithIndiamart account in any way because of unusual or unforeseeable circumstances beyond our control, which includes war, riot, industrial dispute, terrorist activity and its consequences, natural or nuclear disaster, fire, adverse weather conditions, epidemics and pandemics, unavoidable technical problems with transport.
+<br><br>16. 	TERMINATION<br>
+PaywithIndiamart may suspend or terminate your use of the Website or any Service if it believes, in its sole and absolute discretion that you have breached any of the Terms. If you or PaywithIndiamart terminates your use of the Website or any Service, PaywithIndiamart may delete any content or other materials relating to your use of the Service and PaywithIndiamart will have no liability to you or any third party for doing so. 
+<br><br>17. 	GOVERNING LAW<br>
+Terms of Use shall be governed by and interpreted and construed in accordance with the laws of India. The place of jurisdiction shall be exclusively in New Delhi.
+<br><br>18. 	HEADINGS<br>
+The headings herein are included for convenience and identification only and are not intended to describe, interpret, define or limit the scope, extent or intent of the Terms or the right to use the Website by you contained herein or any other section or pages of the Website or any Linked Sites in any manner whatsoever.
+<br><br>19. 	AMENDMENTS<br>
+We may amend these Terms of Service any time by posting an updated version at www.PaywithIndiamart.com and the updated version of these Terms of Service shall take effect immediately upon posting. Each time you use the PaywithIndiamart Account service you confirm that you agree to be bound these Terms of Service as may be amended from time to time.
+<br><br>20. 	INTERPRETATION OF NUMBER AND GENDERS<br>
+The Terms herein shall apply equally to both the singular and plural form of the terms defined. Whenever the context may require, any pronoun shall include the corresponding masculine and feminine. The words "include", "includes" and "including" shall be deemed to be followed by the phrase "without limitation". Unless the context otherwise requires, the terms "herein", "hereof", "hereto", "hereunder" and words of similar import refer to the Terms as a whole.
+<br><br>21. 	SEVERABILITY<br>
+If any provision of the Terms is determined to be invalid or unenforceable in whole or in part, such invalidity or unenforceability shall attach only to such provision or part of such provision and the remaining part of such provision and all other provisions of these Terms shall continue to be in full force and effect.
+<br><br>22. 	RELATIONSHIP<br>
+The relationship between PWIM and Supplier and/ or Buyer is on principal to principal basis. However, PWIM is hereby authorised as an agent by the Supplier only limited to collection of all funds/transactions/payments from the Buyer for and on its behalf as per the provision of Payment and Settlement Systems Act, 2007.<br>
+That upon receiving payment intimation from the Buyer account and after Supplier account authorization, PWIM shall either transfer such funds/transactions/payments into the account of the supplier linked with PWIM account or refund the payment to the Buyer account.<br>
+For the purpose of “supplier account authorization”, the Supplier hereby authorises PWIM to refund the payment to the Buyer Account wherein Supplier account authorization was unsuccessful at PWIM.
+<br><br>23.  MISCELLANEOUS<br> 
+Any Web site's failure to enforce any right or failure to act with respect to any breach by a User(s) under these terms and conditions will not waive that right nor waives PaywithIndiamart's right to act with respect with subsequent or similar breaches. 
+We shall have the right to assign its obligations and duties relating to any/all of its Services to any person or entity.
+ 
+<br><br>
+24.  MISCELLANEOUS<br>
+Sale or Purchase drugs and drug paraphernalia which includes illegal drugs and drug accessories, including herbal drugs like salvia and magic mushrooms; Drug test circumvention aids which includes drug cleansing shakes, urine test additives, and related items; Prescription drugs or herbal drugs or any kind of online pharmacies which includes drugs or other products requiring a prescription by a licensed medical practitioner.
+<br><br>
+
+<hr>
+
+<br><br>PAY WITH INDIAMART OFFER TERMS AND CONDITIONS<br>
+The Pay With Indiamart Offer is brought to you by Pay with Indiamart and made available to you by Pay
+with Indiamart. Please read these terms and conditions (&quot;T&amp;Cs&quot;)
+You agree that, while transacting through Pay with Indiamat during this offer, you will be bound by
+these T&amp;Cs and you acknowledge that you satisfy all Pay with Indiamart Offer requirements as provided
+herein below.
+These T&amp;Cs are in addition to the Pay with Indiamart Conditions of Use to which you agree by using the
+Pay with Indiamart website or mobile/tablet application or mobile site thereof (collectively hereinafter
+referred to as &quot; Pay with Indiamart &quot;). To the extent the Pay with Indiamart Conditions of Use are
+inconsistent with these T&amp;Cs, these T&amp;Cs will prevail with respect to the offer only.
+For the purposes of these T&amp;Cs, wherever the context so requires &quot;You&quot; or &quot;Your&quot; shall mean any
+natural person who is a participant in the offer.<br><br>
+
+ELIGIBILITY:<br>
+You need to fulfil the following eligibility criteria to enter the Contest:<br>
+(a) You should be an individual legal resident of the Republic of India;<br>
+(b) You should have an active Indiamart paid subscription<br>
+(c) You have a billing address within the territory of India; and<br>
+(d) You should be of an age 18 year or above at the time of offer<br>
+Our employees, their immediate family members (spouses, domestic partners, parents, grandparents,
+siblings, children and grandchildren), and our affiliates, advisors, advertising/Contest agencies are not
+eligible for this offer.<br><br>
+
+DETAILS OF THE OFFER AND HOW TO USE:<br>
+This Offer will commence on 7th December 2017 from 12:00:01 a.m. (IST) to 11:59:00 p.m. (IST) (&quot;Offer
+Period&quot;)<br><br>
+In order to be eligible for the offer, during the offer Period you must sign-in to or sign-up from an
+account on the Indiamart App (&quot;Indiamart App&quot;) or Indiamart website and you should have bought a
+paid subscription like Mini Dynamic catalog or higher value subscription.
+Once you have signed-in to the Indiamart App, you can participate by navigating to the page “Pay with
+Indiamart”. You can use “Quick Payment” link or “Send Invoice” link to send payment link to buyer,
+these transactions would be completely free.<br><br>
+
+ADDITIONAL TERMS:<br>
+We may, to the maximum extent permitted by applicable law and in our sole discretion, change the
+T&amp;Cs or cancel the offer at any time; or modify, terminate, or suspend the offer should viruses, worms,
+bugs, unauthorized human intervention or other causes beyond our control corrupt or impair the
+administration, security, fairness or proper functioning of the offer<br><br>
+
+We are not responsible for: (a) lost, misdirected, late, incomplete, or unintelligible entries or for
+inaccurate transaction information, whether caused by you or by any of the equipment or programming
+associated with or utilized in the Offer, or by any technical or human error that may occur in the
+processing of entries; (b) any printing or typographical errors in any materials associated with the Offer;
+(c) any error in the operation or transmission, theft, destruction, unauthorized access to, or alteration
+of, entries, or for technical, network, telephone, computer, hardware or software, malfunctions of any
+kind, or inaccurate transmission of, or failure to receive any transaction information on account of
+technical problems or traffic congestion on the Internet or at any website; or (d) injury or damage to
+your or any other computer or mobile resulting from downloading any materials in connection with the
+offer.<br><br>
+
+We may, in our sole discretion, disqualify any individual found to be: (a) tampering with the transaction
+process or the operation of the Offer or website or mobile application; (b) acting in violation of these
+T&amp;Cs; or (c) acting in an unethical or disruptive manner or with intent to annoy, abuse, threaten or
+harass any other person.<br><br>
+
+If your transaction is incomplete or if you use robotic, automatic, programmed or similar entry methods,
+your transaction will be void. The authorized subscriber of the e-mail account used to enter the offer at
+the actual time of transaction will be deemed to be the participant and must comply with these T&amp;Cs in
+the event of a dispute as to entries submitted by multiple users having the same e-mail account. The
+authorized account subscriber is the natural person who is assigned an e-mail address by an internet
+access provider, on-line service provider, or other organization responsible for assigning e-mail
+addresses for the domains associated with the submitted e-mail addresses. No benefits greater than
+those described in the &quot;Description of the Offer and How to Enter&quot; section above in these T&amp;Cs will be
+awarded.<br><br>
+
+FORCE MAJEURE<br>
+This Offer is subject to force majeure circumstances including without limitation, floods, natural
+disasters, war, act of terror, political unrests, technical snags, act of God or any circumstance beyond the
+reasonable control of Pay With Indiamart (&quot;Force Majeure Event&quot;). Pay with Indiamart shall be not
+liable for any delay or adverse effect caused to the User of the offer as a result of a Force Majeure Event.<br><br>
+
+LIABILITY RELEASE:<br>
+This Offer is being made purely on a &quot;best effort&quot; basis and participating in this Offer is voluntary. By
+participating in the Offer, you will be legally bound hereby, to release from liability, and hold harmless
+Pay With Indiamart, and any of its affiliates, employees or agents representing or related to Pay with
+Indiamart and its services/products. This release is for any and all liability for personal injuries (including
+death), property loss or damage, and misuse of the benefits/ Prizes offered under this Offer, in
+connection with any activity or directly or indirectly, by reason of the acceptance, possession, or
+participation in the Offer, even if caused or contributed to by our negligence.<br><br>
+
+
+
+				</p>
+				
+				
+				</div>
+				
+				
+				
+			</div>
+
+                </div>
+                <div id="footerContent" class="footer-container">
+                        <footer class="wrapper">
+                            <h3>
+                                2019 &copy;
+                                <a style="text-decoration : none;">Pay with Hello Travel Pvt. Ltd.</a>
+                                |
+                                <a href="#" target="_blank" style="text-decoration : none; color: black;">Terms & Conditions</a>
+                                |
+                                <a href="#" target="_blank" style="text-decoration: none; color: black;">Privacy Policy</a>
+    
+                            </h3>
+                        </footer>
+    
+                </div>
+                <div class="clearfix"></div>
+
+                 </div>
+
+        </body>
+
+</html>

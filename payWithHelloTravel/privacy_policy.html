@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Payments on the GO</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                        $(".tab_logo").click(function(){
+                          $(".sidenav").toggle("slow");
+                        });
+                      });
+                       	
+
+
+           </script>
+           <link rel="stylesheet" href="style.css" type="text/css">
+
+           <style>
+               * {
+                font-family: lato, sans-serif;
+               }
+               .title {
+                   font-weight: 300;
+                   font-size: 4.0em;
+               }
+               h1 {
+                   font-size: 2.0em;
+               }
+               p {
+                   line-height: 25px;
+               }
+
+               @media screen and (max-width : 768px)
+               {
+                   .title {
+                       font-size: 1.0em;
+                   }
+                   
+               }
+               @media screen and (max-width : 504px)
+               {
+                   #terms {
+                       padding-top: 50px;
+                   }
+               }
+           
+           </style>
+
+
+    </head>
+        <body>
+                <div class="container">
+                        <div class="navrow">
+                            <div class="navicon">
+                                <a href="http://www.hellotravel.com" alt="Hello Travel">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAAA1CAYAAAAXg+StAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpkMGFkMDhlZS1mYjY3LWRhNDAtYmYwZS1jMDFmMThkZjRmYmIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OTY3QUEzRThDNTRBMTFFNzhEMTBDRTJDOTc2QjcxOTgiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OTY3QUEzRTdDNTRBMTFFNzhEMTBDRTJDOTc2QjcxOTgiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6ODY3YTNmNzktZWJmNi1jYzQ5LWExYzYtNzBhNDkxNzI2YjVlIiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6ODA0N2RjOTctYzU0Ni0xMWU3LWExODgtZTViYmM0YTM2Y2ZkIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+o0zRcQAAD3FJREFUeNrsXWtsHNUVPvPcXXv92AiIA0kIdiC8JbTpi6gPVU5JqSrUUrtI/dFWKg4/qKhKVfsHqGr7A7uFqlRVq5iqQkKqSlwKpVUJ8apChEChWUShaSFNTEghiQn2JvZ6HzNzZ3ru7B37ejyPtXGcdXKPcrKzc+dx5875zvnOuTNryXEcECLkQhVZDIEQAQAhQgQAhAi58ET1r3hD18GmC5gbKKoKtmVB60UXQbqtzW0vTk/DmYkJIIYBmqaBigrz8wjFUZQN105NHRXDK2TVAaBekSQJiG2DY5r+piSGlSx+CgAIOX8BAF6UwAggu4uzUaDNdpyrxNAKOf8BwCIBNX2CVIlJBwLgMjG0Qi6MJBg9fzKTwSPJ4KDi53qbkEvE0Ao5nwHQiroNtdOLAno6DSqlQbZ9pW3bGTG0QlYrAG5EbV/o6B2P59+AdOcZNPI/YxK8D/VuoABIpUDBpBgsazNukxJDK2RV5gCKrjfbhvF9NPXn0LPvlZHWlIpFKJdKICFgTNO8BynOzVINFBmjWv0pAuJ12XGeR+4vIwS2YIMqhlbIqowAaPQvyYryBC7eZ5nmg7giTWv+VI1yWbEMo03ytqUgsO1k+cyZW6szM6CkUmsdSVqH4LHE0ApZlRGA0hwEQV5R1TvR2z+L3v4mTVG+qSUSx/T2drNcLB4sTUx8hQeBVS5fLuk6nTi7ihCyCdedmD3g47d6S+1gFlNgWydxL8QI/iMm5gyoLbRo5MCOVx4ZxIWRPZs+kXfb7jkRewE0/xBy7mS1P0wpRxjWW6l0+nb08NsMy3oagXCjiVQomU4/pSQS73uXTWeNm9Lpw82YA+A225AGJYGPAI5R+1qd3ADF8fVQLjhQnsTvZwCmj9OkmT8tnUAbXKmLv+Xed/uW0iZk8bLje+/1rQ4AUEQzlRQln0inv4VGfX25XH7CmJn5pHX69Gu6pj1ME19quqqun5Rk+bGKbbdWDOMO7yhzSFLwLBp6e3IlzIy3wTR69eI4QGmyFgEWevDuHUdfWqkqUh8a+ugS2pYDfN2o2QsIA30IgtGGB4CsaTQRdlVCEKiq+rimqo8htdlsGMZIpVT6mlWpDCqy/FXU+1B3IC16p1oq/cSyrBsWHNCYQS1KUC3egGDQQcMAoTeD+wmh4bN7ha5/jJ6LGuMi25ZDaKQbxeNfKCVjdzwRBN0NDQD05iCrqqs1jmObqUzmx1oq9Tax7bWYFzyKYPgrRojNCJAzmBz3EMv6O37uDGTj1WmAylQr8v9rwCE2aGj8LZfWqI9L4AP36lyh6y9EAK5wtsDIPD/VzApe67mWszaey5oEz9IgH3qTqdRDmOz+ku6Dic8tVEO2pSY9t1KRKdVpxyiwBYxpA9bdRL9fDGbp20CMixEUjyLaXvZFg+wKeqWwmzJ2Fm9Yd4BhXAgRoOEAED8TTJ/1MQyQbPtR5PsH6sn5HVmee0RUplRH6UCDv8Jp3VBx84HpEz+DmQ/uR1DcBcXjv4Hp/10CU8fORQSYBVwEFcmeBZriAbzw7EPrxy6wfDiLNCjTuADgkuB5CbEkzeiJxMP1HBS3nasCWQZqdQtSnjZJSxFMhDfB1Lt3YPaMG2IAMksXIRiaUP0G8vkVDMtBoCucRUB2+7xiwwoF/zI5gLM5nstHgaLq6qqm7dUSiYNmtXpdVPUd28pzAKhISHW6kOpQMHQAsSruTDE9j4M4ab3qj5BqPwqVSbhEKWbeJ2l3tz9N/7B629JuGC239XBGRgd+CD3tUMyu9Kbkl9BWb58yzODzbDkWAGy/PPY9f66MHz+OoOZQe31tdEz6WVLrGTTdbmDPg5flP8RYn2MAqOFPMWCCfApBMGrEAECWpDkAgN2EVOcal+Jb1S9D5vK7oFLYC+XC5yCZeQa0ZD8UT1wBZuXeT2uvXz1Cbnb3+vXpL5y5bfE3bBctt/lW05s4SG8YGtLOmJuylDbeWLrZ+UbwXLzH2xWyWybmeHS/Ai5vhbk5Eq8v9By9XFLdw1GrPGvPhxzbNV5qrL5+BlWqMv5+svONBvSfXv8ogmJ7DAgaJgIsoEAOfcsrTAlxMELsRzVD+X9Np2dXpNqawa5eCbICUDp1B0wc+QGoiYcg0fJ10Ju/A9PHe6A4vhcqp79x0O7at9RBwpvS7zN+1xuhDrPvfQElzUKdIbuec1NPuZsZ7RHfRFoujArhdpN0f6bdATQpw4xtt29MeqghM6DsZgbdzZQuH8C2wQgD7IsApgeSvhBg8sbvRlg21mOew/kw43lOAWCWy6FqlEoUCIdkWR53onOAibkDVtYDIRsxfNBvOpQ+6IfS5KNAzLuR9z+Ny79FxHRAZvPt/zbWPrcUALCbxQ/6MHq27ZT2MK8/4IEg4qZkFtHG8+MDnKfkt9/lTXTRvjAjCYsCg5wGXX9nhEH1R4xVP4uKLp3iJt7yHIjCqjI93HI+ICp4faDentIeen1bYa7en13seDYEAGgOEKVIb06gnopMgmV5LqOtFq/A0NFWm/Glz5OqNKleBzb5CNjmFpBlAzKdd2I0eDaMHlCeiXoE1WHaH3GzCpzB+wc/auAX1cZ5wmwMhQAGAko3pIhokPP1OxNi9O5xUNdwAJgFPjvGAJdf9LEItcvbltGesYD96wEAv36Ipzq4XFjqeDZMDhBX5sT2Kfw4LYUnwDRKzAHEIZvQ2GUWAfx8C6C9awiSa34PVimwUoDG3sNC/DzDwvXAvA5PF1xD4nkt83CDMVRkUTesTuP3KE6nr9Q5wleBsK2rzv7QY2z3HavHd907uT4OM1rGU5IeXz/6WR+zfL7AImrWT+HYWGaCqB0rbXo5SgHvTW41AGApEaCKRn46gv7YCkYJjlNdDkHTvbYFkGzbD4nWB9wKUYDx4KB2RvDU/gC+7AKHURPvWZ5RrgIzvEwUqJ8zEC/irGEefo3PY3YGGPJS8pyRgDkD3kjnUSzmBIajjsct+6kh/z3PORQ/4Dsp1UEdZGDrC+rL6qJAhMQqRAAAs+RJTdePz5VBqx0L7d+hPMmClksfwOS47JZDaZI83zgynAejN6sLvYrEbZPhvLHfKCYZcLo5T7U9oOKx6CSYq6B44uUaBc7wCnUCABbxQNxYhCelE2q5OvOlbtbPvI8mZUIAMBJhuDQyH2DjkfGcAReZV18STN8Ai1KlFgmKTkgFiL4LYM+7WNK+0PsjiBKtL+IBnwdSwe/VmgYPUg4HtBd1LITGZGOMeCdLiJdr0ok3jgF/qZEZUjbMcFk/ljIpFNX/sJJj3GMHw/7rYvlCJqSClY2JKFtDjL9hZUEOUDGMyB2oCya2bUo1vkO/TziOQ1+S1+gqRZaPgW1X5uzfap4fABh0Upm/gNY07VKh6Js8tAhDAEZH8szYcgEeMMt5wKVId4gB8YYU55lzHB/P+rxsvddZj6ePiy4jXH5A50oKvuhWiBgn2j8v5xjjHBRweUEfrh9uZAAsnAdgL7+HqV17+I3Q/xVVfacpnb5VVtWnOHAcLlUqFe6IyQVhQlbPoP5jNmYw3XP9lxZQlKhkiuUI/oGnSWcuwvh3e97OFxWCPPW8Np93z/spFTv+YAh9gDqqKsspsS8WsWvkDXSXz/uPxOQv1PBzIcZPz7+L3SPwbTPWsACQFSVa6UyxJKnUdFVFoUb2CibGszeUOM5bFv+EqFOLDHNPjeKnmjgGlvEmTJ0EKL4/X+cPTq7OmzivMhLEq1loH/WqFEscr2wYp+UmpKLKsUGRozOkFl9PH3NctSnr9YMl/9k6qdTQIqhVPqIQMeuU2Isv/Y3M/UMpkKzG/KADfROMkLRcqwi9YNIX5u0agcfcoIKp7H/mo8rRXA8vwSk38bXJOpD1Q46eHHfLoMGD3llH4uc3qEGunb5o4tXCs8zjd4YAq8BViYKMMKyNGl0P2yboHDvDHjOg61mZ0ssn6KTZVt/29XhJfpvdeAzvev1evCcksrnf2VgNBlz7SAhl8o7fx8qfw2xdty9HyvnmBqLGszEAYJpm7E4IgA7JcQgQ8qpTS5xThBDq249JmANICwAgU69/P4YQGTn/r/DzIG7shEw6jMUkd4UQAPDJWyaifDrgo0d1A4Dux3hyhquCBAk1/pGYYRzijIUChz4SMcQZ69a4nICeg+tPZ0BCPeTLN0YiIpIfwEN+ADPgDvnA0hNC4+i+vYtwKA2SA8SpJDXhx1pQlOOQSBymP4mIgGh1KZGqvtmcSr3XlEzySQWdBCs5evM+TBoO4fIMRoMxqTwBUqWwQNnNGGPeIzI59Hglu1Hb6wi3AwFPhXpVmVzIufxtvTFVp148R2zixzzxQACloEaYYdeUD/PcMRTG68dACGVaEJHYdRU4xzMcsu0QRM8vePtv93n/uLFuDABULStaTfNi27bXqJJ0ACNAyaa/BypJHRQAmq6/qKVSVVT+FLTMMyXZ1rhjE1yWio6kvIMKQfrMxo+OoXahbg/qMAPFTr8hsmpFFzOqnE/puq6QR6K9xwsK9bSx6NHLvClvMO6zMHV4fr8x9QZEuiHf50jMMYY4w6LRZw3XjzFvDKKAycavlztGIWLbnczhDPvGmX6nJeutIU+DevMEDZMXSP7fdXlBjn5JTAe4GXnTHk1RfkQk6cEZx1F0QvbjXtfruv4ZpEMHaMJ7XZk9ET3U9E+QlDQkmq8G2/w4GKXfgdb0RWx5LbZ3350AIUJWNAeIEgoVTFvpb3+2OLK83/1laADq/TcqinJAk6T8gh9KUtRx5P1Jh5gmRgHTPYRVJWLohTQkAFK6Hg0Cy9oKtv22oqoHE6pK/y7AteVyuUXTtF1uirAgZLT8C6pTl4KalMEySu4fElAU8bdZhTQmANTICqjUjLTnY4quPynr+nRS02CGkE/JknRUkaSngjlT+gUwS9sQAE0YDU4BKSNrInVFHvGjh0JWHAA2CWcnSG+6MGnoUJuadiMYnFKp1GxUq9s0Vf2FY9vlkJDxKv5/VHKsdU6i9bBUmaIPyjUJ8xbSmBEgggIRQj4r23ZOte2X6XcLo4Hr/WX5D6Ev08vaOCTa9iF6NqDR/xcSLYckY2adGHohDQkATGbD3H+zQ8hGVVV/7j4PRIhGy5+arj+iOE4hlNSnO8pAjKeR/rRLNAcm1VGoFjtEABDSkACQwyKA47QqhDyJdvsG/Vtg7OWYv2FCfNKJoE2gIttREsfQ4N9DINDfVtnnJFuuc9ynQKNRIP6Kt5CzLdJq/313IUI+jAgnK0QAQIgQAQAhQgQAhAgRABAiRABAiBABACFCznP5vwADAPwrb25GDGTxAAAAAElFTkSuQmCC" class="icon">
+            
+                                </a>
+                                </div>
+                            <div style="width: 60%; float: left; height: 73px;">
+                               <ul class="navbar">
+                                   <li><a href="ady 5.html" class="link">For Buyers</a></li>
+                                   <li>|</li>
+                                   <li><a href="FAQ.html" class="link">FAQ</a></li>
+                                   <li>|</li>
+                                   <li><a href="contact_us.html" class="link">Contact Us</a></li>
+                               </ul>
+                            </div>
+                            <div style="width: 20%; float :left;">
+                                    <ul class="navtext">
+             
+                                     <li><span style="cursor: text; color: inherit; margin-left: 10px;">Call Now: 08071253899</span></li>
+                                    </ul>
+                                    
+                                     
+                                     </div> 
+            
+                                     <div class="nav_tab">
+                                        <img src="data:image/png;base64,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" style="width: 35px;" alt="tab_logo" class="tab_logo">
+            
+                                    </div> 
+                                    
+            
+                                <div class="sidenav" role="navigation" >
+                                    <ul>
+                                        <li style="color : #fff;" id="mobview"></li>
+                                        <li><a href="seller_hellotravel.html" class="sidenava">For Seller</a></li>
+                                        <li><a href="ady 5.html" class="sidenava">For Buyer</a></li>
+                                        <li><a href="contact_us.html" class="sidenava">Contact Us</a></li>
+                                        <li><a href="FAQ.html" class="sidenava">FAQ</a></li>
+                                        <li><a href="terms_and_conditions.html" class="sidenava">Terms & Conditions</a></li>
+                                        <li><a href="privacy_policy.html" class="sidenava">Privacy Policy</a></li>
+                                    </ul>
+                                </div>
+                            
+                            
+                              
+                                
+                                <span class="call">
+                                    <a href="tel:7210863965">Call Now</a>
+                                </span>  
+                               
+                                
+                            </div>
+                            <div class="clearfix"></div>
+
+                            <div id="terms" class="" style="    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10%;" >
+			<!-- <div class="bcg"></div> -->
+			<div class="">
+				<!-- <a href="/"><img src="img/pwiLogo.png" style="height: auto;max-width: 100%;margin-top: -15px;margin-left: 0;"></a> <br> -->
+				<div class="content"><h1 class="title">Privacy Policy</h1>
+				<p style="font-size: 1em;">
+				PAY WITH HELLOTRAVEL<br><br>
+				PAYWITHHELLOTRAVEL always value your trust and is committed to protecting and keep in confidence your personal information provided by you on this site at all times. The information that you are required to provide on our site are used only for the purpose of your identification when you visit PAYWITHHELLOTRAVEL. All applications of the information that you submit are strictly in accordance of the privacy statement. By visiting this site, you are accepting the practices described herein..<br><br>
+
+PAYWITHHELLOTRAVEL is an online intermediary facilitating the sale and purchase transaction or provide any other services PAYWITHHELLOTRAVEL perform for you. 
+<br><br>
+PAYWITHHELLOTRAVEL Account service is available only in respect of transactions concluded between the users of the website - https://paywith.hellotravel.com/. This Privacy Policy applies to services provided by PAYWITHHELLOTRAVEL and sets out how we may collect, use and disclose information for your access to and use of PAYWITHHELLOTRAVEL services to make payments in connection with the online transactions for products or services concluded on and through this platform.
+<br><br>
+Please note that the clauses of the policies can be changed/altered over time. Users are advised to regularly check our privacy statements for such updates and ensure that they do not have any issue with the new policies.
+<br><br>
+WHAT INFORMATION DOES PAYWITHHELLOTRAVEL COLLECT?<br>
+At the time of opening your PAYWITHHELLOTRAVEL Account, you may be asked to mention your Name, age, address, business, Account details, mobile number, PAN and your email id, etc., unless you are already a registered user of https://paywith.hellotravel.com/.
+Although for accessing this website you are not required to open a user account, but to make any sale purchase or other transaction on https://paywith.hellotravel.com/, you have to open a user account which will allow you to save your personal and other related information. You can choose not to provide information to us, but in general some information about you is required in order for you to avail the services provided by https://paywith.hellotravel.com/
+<br><br>
+When you visit this site, even if you don't make any transaction, we may collect certain information, like your IP address, or browser, and information about your computer’s operating system, application version, language settings and pages that have been shown to you. If you are using a mobile device, we might also collect data that identifies your mobile device, device-specific settings and characteristics and latitude/longitude details. We might also calculate and process data related to the type of apps installed on a mobile device, such as the name of the app, an app description and the category it belongs to. None of this information alone will be able to tell us who you are, but it can still considered to be "personal" information.
+<br><br>
+Please be aware that calls to and from PAYWITHHELLOTRAVEL may be recorded and will be used to monitor our customer service for quality or compliance purposes, to check the accuracy of the information you provide us, for fraud prevention purposes, or to provide training to our staff and the same will also be governed by the provisions of this Privacy Policy.
+<br><br>
+PURPOSE OF COLLECTING INFORMATION:<br>
+PAYWITHHELLOTRAVEL uses the information provided by you and collected by it to make sure that you are provided with the best services. In particular, we use the information you provide for the following purposes: <br>
+<br>1. To verify your identity during account creation;
+<br>2. To verify your eligibility to register as a user of PAYWITHHELLOTRAVEL;
+<br>3. To process your registration as a user and maintaining and managing your registration;
+<br>4. To provide you with PAYWITHHELLOTRAVEL service and related customer service (including but not limited to sending notices about your transactions, and responding to your queries, feedback, claims or disputes) by placing a voice call or through text (SMS) or email messaging;
+<br>5. To administer accounts, collect and process payments;
+<br>6. To share information with Third party vendors and our trade partners and affiliates to complete your transaction help you in availing services which are available on https://paywith.hellotravel.com/;
+<br>7. To participation in communities, chat rooms, and other interactive services including social media platform provided on or through this site.
+<br>8. To perform statistical, demographic, and marketing analyses of users of the https://paywith.hellotravel.com/;
+<br>10. To keep a record of your browsing preferences and to send you reminders and offers in respect of services which are of interest to you;
+<br>11. To inform you about the latest services and promotional offers, by sending mails to the email id that you provide. 
+<br>12. To give you accurate and prompt customer support through our trade and channel partners.
+<br>13. To make our information services more accurate and reliable.
+<br>14. To customize this site as per your requirements and preferences.
+<br>15. To conduct research surveys and cross-sectional studies among customers. Kindly note that we can send you emails for this purpose.
+<br>16. To send you our regular newsletters by email. You can however opt out, or unsubscribe, from marketing communication at any time.
+<br>17. To detect and prevent fraud and other illegal or unwanted activities which may harm you or this site
+<br>18. To Improve our services, enhance user experience and improve the functionality and quality of our online services.
+<br>19. To share data with our trusted affiliates, partners and companies belonging to our corporate family for giving you a fulfilling experience.
+<br>20. To share aggregate or anonymous information with third parties, including advertisers and investors to develop content and services we hope you will find of interest.
+<br>21. To share information with government or investigative authorities if we are required by law (or any regulation having the force of law) to do so. 
+<br>22. To share it with our insurers and with regulatory agencies.
+<br><br>
+SECURITY OF INFORMATION<br>
+While no Web site can guarantee security, we at PAYWITHHELLOTRAVEL, appreciate the importance of keeping your information safe and confidential at all times. Further only authorized employees are permitted to access your information, and they may only do so for permitted business functions.
+	<br><br>
+DISCLOSURE OF PERSONAL DATA<br>
+You further agree that we may disclose and transfer your information to service providers engaged by us or financial institutions that we partner with to assist us with providing you with our services (including fraud prevention, data entry, database management, promotions, marketing, customer service, technology services, products and services alerts and payment extension services).
+<br><br>
+When necessary, we may also disclose and transfer your information to our professional advisers, law enforcement agencies, insurers, government and regulatory and other organizations whether located in India or outside. By agreeing to this privacy policy, you hereby consent to all such transfers.
+<br><br>
+We may share your Account Information and other information with banks or Service Providers to enable your transactions on https://paywith.hellotravel.com/ to be completed. In addition, we may use your Account Information and other information to prevent fraud or assess and manage risk or evaluate your credit-worthiness and associated risks or protect your account from fraudulent activity (and alert you if we detect such fraudulent activity on your accounts) and in the process of such determination, we may need to make such Account Information and other information available to Service Providers, banks, collection agent or credit agencies.
+<br><br>
+We may share your Personal Data with companies which we plan to merge with or are acquired by, which shall follow the terms and conditions of this Privacy Policy with respect to the use of your Information.
+<br><br>
+We may provide statistical information to third parties also.
+ <br><br>
+APPLICATION OF COOKIES<br>
+By definition, cookies are small internet files which seek your permission to be placed on your systems’ hard drive. Provided that you agree to the usage of cookies on your computer, the latter can provide valuable analysis about the sites that you visit regularly and other important web traffic information. Basically, cookies are used by any website to remember the browsing behaviour and preferences of users. That, in turn, helps browsers to get a more personalized feel while on their favourite websites. 
+<br><br>
+PAYWITHHELLOTRAVEL may also use Web beacons (also known as clear gifs, pixel tags or Web bugs), which are tiny graphics with a unique identifier, similar in function to cookies, that are placed in the code of a Web page. PAYWITHHELLOTRAVEL use Web beacons to monitor the traffic patterns of users from one page within our sites to another, to deliver or communicate with cookies, to understand whether you have come to our site from an online advertisement displayed on a third-party website, and to improve site performance. 
+<br><br>
+PAYWITHHELLOTRAVEL also makes use of traffic log cookies to find out more about the preferences of its users. Web traffic data is also analyzed by us to find out the relative popularity of the different pages of our website. Users are hereby notified that such cookies are used only for statistical purposes and are removed as soon as their purpose is served. We also strive to update our website in keeping with the customers’ requirements, with the help of the findings from web cookies. Of course, if you disable cookies on your system, you cannot avail of this benefit.
+<br><br>
+Please note that the application of online cookies do not, in any manner, enable PAYWITHHELLOTRAVEL to gain access to your computer, or any information stored therein (except, of course, the information you actually wish to share with us). Cookies only help us get an idea about which pages on our website are performing as per expectations and which are not. The cookies we use have varying lifespans, but the maximum lifespan we set on some is five years from your last visit to this site. 
+<br><br>
+LINKS TO PARTNER WEBSITES/ SITES OF THIRD-PARTY SERVICE PROVIDERS:<br>
+We put up links to our partner sites on this site. Such links are published for the sole purpose of presenting the best-quality information to our users. However, the protection of the information of users ceases to be the responsibility of PAYWITHHELLOTRAVEL as and when they click on such links and navigate away from our site. We do not have any influence, access to or control over cookies or other technologies these third parties may use to collect information about your interests and users are advised to go through their privacy statements separately. 
+<br><br>
+EXCLUSION OF CHILDREN<br>
+The services offered by PAYWITHHELLOTRAVEL are not for the Users who are under the age of 18. When we receive information from a User under the age of 18, we reserve the right to delete it.
+<br><br>
+NON-PERSONAL INFORMATION<br>
+We may disclose or share Non-Personal Information (or other information, other than Personal Information) in any other manner that we deem appropriate or necessary to third parties or to our trade partners and affiliates to help us determine how people use parts of this Site and who our users are so we can improve this Site. 
+<br><br>
+USER OBLIGATIONS IN RESPECT OF ACCESS RIGHTS <br>
+You undertakes to provide true, accurate, current and complete information about yourself and your business as is required on the site and to keep it true, accurate, current and complete at all time. In case of any untrue, inaccurate, not current or incomplete information, PAYWITHHELLOTRAVEL reserves the right to suspend or terminate your account and access rights to the site or any portion thereof. YOU ARE ENTIRELY RESPONSIBLE FOR THE SECURITY AND CONFIDENTIALITY OF YOUR PASSWORD AND ACCOUNT INFORMATION. FURTHERMORE, YOU ARE ENTIRELY RESPONSIBLE FOR ANY AND ALL ACTIVITIES THAT OCCUR UNDER YOUR ACCOUNT.
+<br><br>
+CHANGES TO THIS PRIVACY POLICY<br>
+Any changes to this Privacy Policy will be communicated by us by posting an amended and restated Privacy Policy on https://paywith.hellotravel.com/. Once posted on the PAYWITHHELLOTRAVEL Site the new Privacy Policy will be effective immediately. You agree that any information we hold about you (as described in this Privacy Policy and whether or not collected prior to or after the new Privacy Policy became effective) will be governed by the latest version of the Privacy Policy.
+<br><br>
+
+
+
+				</p>
+				
+				
+				</div>
+				
+				
+				
+            </div>
+            
+            
+            
+                            
+                    
+                                    
+            </div>
+            <div id="footerContent" class="footer-container">
+                    <footer class="wrapper">
+                        <h3>
+                            2019 &copy;
+                            <a style="text-decoration : none;">Pay with Hello Travel Pvt. Ltd.</a>
+                            |
+                            <a href="#" target="_blank" style="text-decoration : none; color: black;">Terms & Conditions</a>
+                            |
+                            <a href="#" target="_blank" style="text-decoration: none; color: black;">Privacy Policy</a>
+
+                        </h3>
+                    </footer>
+
+            </div>
+            <div class="clearfix"></div>
+            
+            
+                    </div>
+        </body>
+</html>

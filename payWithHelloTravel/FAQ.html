@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#tab-nav").click(function(){
+                    $(".sidenav").toggle("slow");
+                    
+                });
+            });
+        </script>
+        
+         
+
+        <script>
+            $(document).ready(function(){
+                $(".gh1").click(function(){
+                    $(".container3").toggle("slow");
+                    style.cssText ="-webkit-transition: all 1.0s ease-in-out;";
+             });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $(".oh2").click(function(){
+                    $(".od2").toggle("slide");
+                    
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $(".oh3").click(function(){
+                    $(".od3").toggle("slide");
+                    
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $(".oh4").click(function(){
+                    $(".od4").toggle("slide");
+                    
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $(".oh5").click(function(){
+                    $(".od5").toggle("slide");
+                    
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $(".oh6").click(function(){
+                    $(".od6").toggle("slide");
+                    
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $(".oh7").click(function(){
+                    $(".od7").toggle("slide");
+                    
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $(".oh8").click(function(){
+                    $(".od8").toggle("slide");
+                    
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $(".oh9").click(function(){
+                    $(".od9").toggle("slide");
+                    
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $(".oh10").click(function(){
+                    $(".od10").toggle("slide");
+                    
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $(".oh11").click(function(){
+                    $(".od11").toggle("slide");
+                    
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $(".oh12").click(function(){
+                    $(".od12").toggle("slide");
+                    
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $(".oh13").click(function(){
+                    $(".od13").toggle("slide");
+                    
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $(".oh14").click(function(){
+                    $(".od14").toggle("slide");
+                    
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $(".oh15").click(function(){
+                    $(".od15").toggle("slide");
+                    
+                });
+            });
+        </script>
+        
+        <style>
+        
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Lato,sans-serif !important;
+                
+            }
+           
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            ul li {
+                list-style-type: none;
+            }
+
+            .container {
+                width: 100%;
+                margin: auto;
+                height: 73px;
+                box-sizing: border-box;
+                position: fixed;
+                background-color: #ffff; 
+                z-index: 10000;
+                border-bottom: 1px solid #cfc2c2;
+            }
+
+            .icon1 {
+                margin: 10px;
+                float: right;
+                padding: auto;
+                vertical-align: middle;
+                border: 0;
+                position: static;
+                z-index: auto;
+                line-height: 60px;
+            }
+
+            .navbar{
+                padding: 0px;
+                margin: 9px;
+                float: left;
+                text-align: center;
+                text-decoration: none;
+                list-style : none;
+                line-height: 53px;
+            }
+
+            .navbar li{
+                margin-left: 5px;
+            }
+
+            .a{
+                color: #000;
+                font-size: 14px;
+                text-decoration: none;
+                padding: 10px;
+                margin-left:5px;
+                
+            }
+
+
+            .a:hover {
+                color: black;
+                border-bottom: 2px solid orangered;
+                cursor: pointer;
+                transition: 0.2s;
+            }
+
+            .topnavbar li{
+                padding: 0px;
+                margin: 10px;
+                float: left;
+                text-align: center;
+                text-decoration: none;
+                list-style : none;
+                line-height: 53px;
+            }
+
+            .callNowMob {
+               display: none;
+            }
+
+
+            .callNowMob a:hover {
+                background-color: white;
+                color: #000;
+                border-radius: 6px;
+
+            }
+
+            #nav-icon{
+                display: none;
+                width: 50px;
+                height: 40px;
+                position: absolute;
+                margin: 20px auto;
+                transition: .5s ease-in-out;
+                cursor: pointer;
+                top: 0px;
+                z-index: 100000;
+                left: 30px;
+                float: none;
+                line-height: 20px;
+                vertical-align: middle;
+                border: 0;
+
+            }
+
+            .sidenav {
+                display: none;
+            }
+
+            .sidenav {
+                position: fixed;
+                width: 12em;
+                height: 100%;
+                text-decoration: none;
+                z-index: 10000;
+                display: none;
+                background: #fff;
+                transition: left .5s linear;
+                padding-top: 30px;
+                padding-left: 30px;
+                top: 0;
+                opacity: 1;
+            } 
+
+            .sidenav ul{
+                float: left;
+                width: 100%;
+                list-style: none;
+                text-decoration: none;
+                margin: 0;
+                line-height: 50px;
+                position: static;
+                padding: 0;
+                margin-top: 60px;
+                z-index: auto;   
+            }
+
+            .sidenav .nav a{
+                display: block;
+                text-decoration: none;
+                transition: background .35s;
+                width: 100%;
+                color: #4691d4;
+            }
+
+            .sidenav li a:hover{
+                color: rebeccapurple;
+            }
+
+            .minicontainer {
+                margin: 0 auto;
+                max-width: 1280px;
+            }
+            .slide .wrapper {
+                padding-top: 10%;
+                text-align: center;
+            }
+            
+            .wrapper {
+                width: 90%;
+                margin: 0 auto;
+                max-width: 1400px;
+            }
+            footer.wrapper {
+                max-width: 1300px;
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .footer-container {
+                text-align: center;
+                font-size: 14px;
+                color: rgba(0, 0, 0, 0.9);
+                background-color: rgba(0, 0, 0, 0.1);
+                float: left;
+                width: 100%;
+            }
+
+            footer.wrapper {
+                max-width: 1300px;
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .footer-container h3 {
+                margin: 0;
+                padding: 20px 0;
+                font-weight: normal;
+                font-size: 1em;
+                line-height: 25px;
+            }
+
+
+            .tabs {
+                display: flex;
+                overflow-x: auto;
+                overflow-y: hidden;
+                height: 48px;
+                background-color: #fff;
+                margin: 0 auto;
+                white-space: nowrap;
+               
+            }
+
+            .tabs .tab {
+                flex-grow: 1;
+                float: left;
+                line-height: 48px;
+                height: 48px;
+                padding: 0;
+                margin: 0;
+                text-transform: uppercase;
+                overflow: hidden;
+                letter-spacing: .8px;
+                width: 15%;
+                min-width: 80px;
+                list-style: none;
+            }
+
+            .tabs .tab a {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                transition: color .28s ease;
+                display: block;
+                text-overflow: ellipsis;
+            }
+
+            .waves-effect {
+                position: relative;
+                cursor: pointer;
+                -moz-user-select: none;
+                vertical-align: middle;
+                z-index: 1;
+                will-change: opacity,transform;
+                text-decoration: none;
+            }
+
+            .tabs .indicator {
+                position: absolute;
+                bottom: 0;
+                height: 2px;
+                
+                will-change: left,right;
+                color: #009688;
+            }
+
+            .collapsible {
+                margin: .5rem 0 1rem;
+            }
+
+            .collapsible-header {
+                display: block;
+                cursor: pointer;
+                min-height: 3rem;
+                line-height: 3rem;
+                padding: 0 1rem;
+                margin-top: 10px;
+                border-bottom: 1px solid #ddd;
+                background-color: #fff;
+                text-align: left;
+                font-weight: 500;
+            }
+
+            .svgClass {
+                vertical-align: middle;
+                margin-right: 15px;
+                width: 25px;
+            }
+
+            .collapsible .container3 {
+                width: 95%;
+                margin: 0 5%;
+            }
+
+            .collapsible-body, .collapsible-header {
+            border-bottom: 1px solid #ddd;
+            background-color: #fff;
+            }       
+
+            .collapsible-body p {
+            margin: 0;
+            padding: 2rem;
+            text-align: left;
+            }
+
+            .super-container {
+             width: 100%;
+             max-width: 700px;
+             margin: 0 auto;
+             display: bloc
+            }
+
+            .iframe-container {
+             position: relative;
+             height: 0;
+             padding-bottom: 56.25%;
+             z-index: 3;
+             display: block;
+            }
+
+            .iframe-videos {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            padding: 2px;
+            border: 2px solid #ddd;
+        }
+
+        .screenshots {
+            width: 100%;
+        }
+
+
+
+            @media screen and (max-width: 768px){
+                .navbar{
+                    display: none;
+                }
+                
+                .container {
+                    background-color: #f4f3f5;
+                    color: #0a1867;
+                    position: static;
+                }
+
+                .icon1 {
+                    display: none;
+                    float: left;
+                }
+
+                #nav-icon {
+                    display: block;
+                }
+                #container2 {
+                    top: 0;
+                }
+            }
+
+
+            @only screen and (min-width: 993px){
+                .minicontainer{
+                    width: 70%;
+                }
+            }
+
+
+            @media screen and (max-width:1035px){
+                .topnavbar {
+                    display: none;
+                }
+
+                .callNowMob {
+                    display: block;
+                    position: absolute;
+                    line-height: 20px;
+                    float: none;
+                    z-index: 100000;
+                    right: 31px;
+                    top: 27px;
+                    background: #0aa99c;
+                    border-radius: 6px;
+                    top: 20px;
+                }
+
+                .callNowMob a {
+                    color: white;
+                    text-decoration: none;
+                    float:none;
+                    z-index: auto;
+                    position: static;
+                    line-height: 36px;
+                    display: block;
+                    width: 100px;
+                    text-align: center;
+                }
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="Maincontainer" style=" max-width: 100%; margin: auto; height: auto; box-sizing: border-box; background-color: #eeeeee;">
+                <div class="container"> 
+                    <div style="width : 20%; float: left; box-sizing: border-box;">
+                        <a id="b" href="http://www.hellotravel.com" alt="hello_travel">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAAA1CAYAAAAXg+StAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpkMGFkMDhlZS1mYjY3LWRhNDAtYmYwZS1jMDFmMThkZjRmYmIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OTY3QUEzRThDNTRBMTFFNzhEMTBDRTJDOTc2QjcxOTgiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OTY3QUEzRTdDNTRBMTFFNzhEMTBDRTJDOTc2QjcxOTgiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6ODY3YTNmNzktZWJmNi1jYzQ5LWExYzYtNzBhNDkxNzI2YjVlIiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6ODA0N2RjOTctYzU0Ni0xMWU3LWExODgt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" alt="hello_travle_logo"class="icon1">
+                        </a>
+                    
+                    </div>
+
+                    <div style="width: 60%; float : left; box-sizing: border-box; ">
+                        <ul class="navbar">
+                            <li style="display: inline;"><a class="a" href="seller_hellotravel.html">For Seller</a></li>
+                            <li style="display: inline;">|</li>
+                            <li style="display: inline;"><a class="a" href="FAQ.html">FAQ</a></li>
+                            <li style="display: inline;">|</li>
+                            <li style="display: inline;"><a class="a" href="contact_us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                        <div style="width: 20%; float : right; text-align:center; box-sizing: border-box; padding: 0px;">
+                        <ul class="topnavbar" style="margin-right: 0px;">
+                           <li>
+                                <span style="color: inherit; text-decoration: none; cursor: text; margin-left: 25px; font-size: 14px;">Call Now: 08048735999</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
+
+                <span class="callNowMob">
+                    <a href="tel.08048735999">Call Now</a>
+                </span>
+    
+                <div id="nav-icon">
+                    <img src="data:image/png;base64,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" style="width:35px;" id="tab-nav">
+                </div>
+                <div class="sidenav" role="navigation">
+                    <ul class="nav">
+                        <li id="welcomeMob" style="color:#fff;"></li>
+                        <li><a href="seller_hellotravel.html">For Seller</a></li>
+                        <li><a href="ady 5.html">For Buyer</a></li>
+                        <li><a href="contact_us.html">Contact Us</a></li>
+                        <li><a href="terms_and_conditions.html">Terms & Conditions</a></li>
+                        <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+
+                <div id="container2" style="display: block; min-height: 80%; border: 1px solid #eeeeee;">
+                    <div class="minicontainer" style="margin-top: 60px;">
+                        <div style="padding-top: 20px; margin: 0 auto; text-align: center; width: 70%;">
+                            <div>
+                                <ul class="tabs" style="width: 100%;">
+                                    <li class="tab col s6">
+                                        <a class="waves-effect waves-in active" href="FAQ.html" style="color: #009688">Seller Account</a>
+                                    </li>
+                                    <li class="tab col s6 bbbb">
+                                        <a class="waves-effect waves-in" href="FAQ_2.html" style="color: #009688">Buyer Account</a>
+                                    </li>
+                                    <div class="indicator" style="right: 438px; left: 0px;"></div>
+                                </ul>
+                            </div>
+
+
+                            <div id="seller" style="display: block;">
+                            <ul class="collapsible" data-collapsible="expandable">
+                                <li class="active">
+                                    <div class="collapsible-header gh1">
+                                        <img class="svgClass" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3fNhw6nRgpQh3Fc4ekyf4U5YfnlBlYsJLOZVZssTAC53Ty4xxbQ" alt="">
+                                        Getting Started
+                                    </div>
+                                    <div class="container3">
+                                        <ul id="getting-started" class="collapsible" data-collapsible="expandable" style="display: block;">
+                                        <li class="successQ" style="transform: translateX(0px); opacity: 1;">
+                                        <div class="collapsible-header oh1">
+                                            <img class="svgClass" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3fNhw6nRgpQh3Fc4ekyf4U5YfnlBlYsJLOZVZssTAC53Ty4xxbQ" alt="">
+                                            Creating and accessing your account
+                                        </div>
+                                        <div class="collapsible-body od1" style="display: none; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px; line-height: 25px;">
+
+                                        <p>If you already have an Hellotravel premium account, you can be up and running on Pay with HelloTravel in no time. Just complete the KYC process and you will be ready to accept payments from the buyers. 
+                                        </p>
+                                        </div>
+                                        </li>
+                                        <li class="successQ" style="transform: translateX(0px); opacity: 1;">
+                                            <script>
+                                                $(document).ready(function(){
+                                                    $(".oh1").click(function(){
+                                                        $(".od1").toggle("slide");
+                                                        
+                                                    });
+                                                });
+                                            </script>
+                                            <div class="collapsible-header oh2"> 
+                                                <img class="svgClass" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3fNhw6nRgpQh3Fc4ekyf4U5YfnlBlYsJLOZVZssTAC53Ty4xxbQ" alt="">
+                                                What do I need for KYC?
+                                            </div>
+                                            <div class="collapsible-body od2" style="display: none; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px; text-align: left; line-height: 25px;">
+                                                <p>KYC is a simple process to authenticate a seller on PayWithHelloTravel
+                                                    <br>
+                                                    <br>
+
+                                                    It requires verifcation of your:<br>
+                                                    1. PAN number<br>
+                                                    2. Account number<br>
+                                                    3. IFSC code 
+                                                <br>
+                                            </p>
+                                                </div>
+                                                </li>
+                                         <li class="successQ" style="transform: translateX(0px); opacity: 1;">
+                                         <div class="collapsible-header oh3">
+                                        <img class="svgClass" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3fNhw6nRgpQh3Fc4ekyf4U5YfnlBlYsJLOZVZssTAC53Ty4xxbQ"  alt="">
+                                        How can I accept payment via Pay with IndiaMART?
+                                     </div>
+                                     <div class="collapsible-body od3" style="display: none; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px; line-height: 25px;">
+                                           <p>
+                                               <b>Method 1</b>
+                                               <br>
+                                               You can accept the payments via Pay with HelloTravel by using the "collect Payment" tab on your seller dashboard
+                                               <br>
+                                               <br>
+                                               collect online payments via pay with HelloTravel
+                                               <br>
+                                               <br>
+                                               <span class="super-container">
+                                                   <span class="iframe-container">
+                                                        <iframe class="iframe-videos"  src="https://www.youtube.com/embed/4RXjcRuHKaI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                   </span>
+                                               </span>
+                                               <br>
+                                               <br>
+                                               collect online payments via Pay with HelloTravel (Hindi)
+                                               <br>
+                                               <br>
+                                               <span class="super-container">
+                                                   <span class="iframe-container">
+                                                        <iframe  class="iframe-videos"  src="https://www.youtube.com/embed/Bj36kFmkIak" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                   </span>
+                                               </span>
+                                               <br>
+                                               <br>
+                                               <b>Method 2</b>
+                                               <br>
+                                               You can accept the payments via Pay with HelloTravel by using the "collect payment with Invoice" tab on your seller dashboard
+                                               <br>
+                                               <br>
+                                               Pay with HelloTravel - Collect payments online by sending an Invoice
+                                               <br>
+                                               <br>
+                                               <span class="super-container">
+                                                   <span class="iframe-container">
+                                                        <iframe class="iframe-videos" src="https://www.youtube.com/embed/iJBaaFrLU9Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                   </span>
+                                               </span>
+                                               <br>
+                                               <br>
+                                               Pay with HelloTravel - Collect payments online by sending an invoice (Hindi)
+                                               <br>
+                                               <br>
+                                               <span class="super-container">
+                                                   <span class="iframe-container">
+                                                        <iframe class="iframe-videos" src="https://www.youtube.com/embed/NKsZxiXBWNk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                   </span>
+                                               </span>
+                                               <br>
+                                               <br>
+                                               <b>Method 3</b>
+                                               <br>
+                                               You can share your payment link with your buyer. Your payment link is : paywith.hellotravel.com/(your registered phone number)
+                                               <br>
+                                               Step 1: Share your payment link with your buyer
+                                               <br>
+                                               Step 2: Buyer clicks on the payment link
+                                               <br>
+                                               Step 3: Buyer makes the payment
+                                               <br>
+                                               Step 4: You receive the payment in your account instantly
+                                               <br>
+                                               <br>
+                                               <b>Method 4</b>
+                                               <br>
+                                               A buyer can pay you directly via your own payment link which is also available on your catalog. Your payment link is : paywith.hellotravel.com/(your registered phone number)
+                                               <br>
+                                               1: Buyer visits your catalog
+                                               <br>
+                                               2: Buyer clicks on "Profile" -> "Pay with HelloTravel"
+                                               <br>
+                                               3: Buyer makes the payment
+                                               <br>
+                                               4: You receive the payment in your account instantly
+                                           </p>
+                                           </div>
+                                         </li>
+                                <li class="successQ" style="transform: translateX(0px); opacity: 1;">
+                                 <div class="collapsible-header oh4">
+                                 <img class="svgClass" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3fNhw6nRgpQh3Fc4ekyf4U5YfnlBlYsJLOZVZssTAC53Ty4xxbQ"  alt="">
+                             Per transaction rate calculator
+                                  </div>
+                             <div class="collapsible-body od4" style="display: none; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px; line-height: 25px;">
+                                  <p>
+                                      If you have any doubts in your per transaction fee calculation you can use the rate calculator in the link below.
+                                      <br>
+                                      <br>
+                                      <a href="#">
+                                          Pay with HelloTravel rate calculator
+                                      </a>
+                                      <br>
+                                      <br>
+                                      If you have any queries, please contact us at paywith@hellotravel.com
+                                  </p>
+                                </div>
+                                  </li>
+                                <li class="successQ" style="transform: translateX(0px); opacity: 1;">
+                                  <div class="collapsible-header oh5">
+                                   <img class="svgClass" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3fNhw6nRgpQh3Fc4ekyf4U5YfnlBlYsJLOZVZssTAC53Ty4xxbQ" alt="">
+                                When do I get the payment in my account?
+                               </div>
+                               <div class="collapsible-body od5" style="display: none; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px; line-height: 25px;">
+                                 <p>
+                                     Once the KYC is approved by us, we'll release the payment via NEFT/RTGS/IMPS instantly. You will receive the payment in your account within 2 working hours after the release of your payment
+                                 </p>
+                                    </div>
+                                </li>
+                                     <li class="successQ" style="transform: translateX(0px); opacity: 1;">
+                                              <div class="collapsible-header oh6">
+                                        <img class="svgClass" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3fNhw6nRgpQh3Fc4ekyf4U5YfnlBlYsJLOZVZssTAC53Ty4xxbQ" alt="">
+                               How do I update my Bank details?
+                              </div>
+                              <div class="collapsible-body od6" style="display: none; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px; line-height: 25px;">
+                                <p>
+                                    You can update your Bank details very easily. Just log on to your seller dashboard and under the "Collect Payments" Tab choose "Add/View Bank Details and Add KYC" to update your bank details
+                                    <br>
+                                    <br>
+                                    How to add bank details:
+                                    <br>
+                                    <br>
+                                    <span class="super-container">
+                                        <span class="iframe-container">
+                                                <iframe class="iframe-videos" src="https://www.youtube.com/embed/iL0PJek09FI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                        </span>
+                                    </span>
+                                    <br>
+                                    <br>
+                                    How to add bank details (Hindi):
+                                    <br>
+                                    <br>
+                                    <span class="super-container">
+                                        <span class="iframe-container">
+                                                <iframe class="iframe-videos" src="https://www.youtube.com/embed/1CJfgrQ9qa0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </span>
+                                    </span>
+
+
+                                </p>
+                                </div>
+                                 </li>
+                                 <li class="successQ" style="transform: translateX(0px); opacity: 1;">
+                                       <div class="collapsible-header oh7">
+                                       <img class="svgClass" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3fNhw6nRgpQh3Fc4ekyf4U5YfnlBlYsJLOZVZssTAC53Ty4xxbQ" alt="">
+                                       Pay with IndiaMART Pricing
+                                     </div>
+                                  <div class="collapsible-body od7" style="display: none; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px; line-height: 25px;">
+                                <p>
+                                        A fee of only 1.75% per transaction will be levied on all modes of payments (including Credit/Debit cards, Net-banking, Wallets, ATM-cum- debit). The fees displayed is excluding taxes. We will apply GST of 18% to the fees displayed above.
+                                        <br>
+                                <br>
+                                <b>For Example:</b>
+                                <br>
+                                On a transaction of Rs. 10,000;
+                                <br>
+                                The fees applied will be 1.75% of 10,000 = Rs. 175
+                                <br>
+                                +
+                                <br>
+                                GST (18% of 175) = Rs. 31.5
+                                <br>
+                                Net payable to seller = 10,000 - 206.5 = Rs. 9793.50
+                                            
+                                </p>
+                                
+                                           </div>
+                                    </li>
+                                 <li class="successQ" style="transform: translateX(0px); opacity: 1;">
+                                    <div class="collapsible-header oh8">
+                                      <img class="svgClass" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3fNhw6nRgpQh3Fc4ekyf4U5YfnlBlYsJLOZVZssTAC53Ty4xxbQ" alt="">
+                                       Buyer journey on Pay with IndiaMART
+                                      </div>
+                                  <div class="collapsible-body od8" style="display: none; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px; line-height: 25px;">
+                                             <p>
+                                                 Pay with HelloTravel works on your Hello Travel catalog as follows:
+                                                 <br>
+                                                 <br>
+                                                 1. Buyer goes to your HelloTravel catalog and clicks on Pay with HelloTravel
+                                                 <br>
+                                                 2. Enters his/her mobile number and product details
+                                                 <br>
+                                                 3. Use Pay with HelloTravel payment methods to make the payment
+                                                 <br>
+                                                 4. After a buyer has done the payment, you'll get a notification to accept the payment
+                                                 <br>
+                                                 5. If you are not a pre-approved KYC supplier, you'll have to verify yourself through our KYC process. Then the payment will be released into your bank account.
+                                             </p>
+                                             </div>
+                                     </li>
+                                   <li class="successQ" style="transform: translateX(0px); opacity: 1;">
+                                     <div class="collapsible-header oh9">
+                                     <img class="svgClass" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3fNhw6nRgpQh3Fc4ekyf4U5YfnlBlYsJLOZVZssTAC53Ty4xxbQ" alt="">
+                                     What is the offer?
+                                    </div>
+                                     <div class="collapsible-body od9" style="display: none; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px; line-height: 25px;">
+                                   <p>
+                                        The first 10 transactions starting from 14-Dec-17 are free for premium Indiamart sellers.
+                                        <br>
+                                   </p>
+                                   </div>
+                                        </li>
+                                     <li class="successQ" style="transform: translateX(0px); opacity: 1;">
+                                      <div class="collapsible-header oh10">
+                                     <img class="svgClass" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3fNhw6nRgpQh3Fc4ekyf4U5YfnlBlYsJLOZVZssTAC53Ty4xxbQ" alt="">
+                                      Who are eligible for the offer?
+                                        </div>
+                                       <div class="collapsible-body od10" style="display: none; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px; line-height: 25px;">
+                                                 <p>
+                                                        All the premium sellers, i.e. Sellers with subscriptions are eligible for this offer.
+                                                        <br>
+                                                 </p>
+                                               </div>
+                                              </li>
+                                             <li class="successQ" style="transform: translateX(0px); opacity: 1;">
+                                            <div class="collapsible-header oh11">
+                                           <img class="svgClass" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3fNhw6nRgpQh3Fc4ekyf4U5YfnlBlYsJLOZVZssTAC53Ty4xxbQ" alt="">
+                                            what is the limit for collecting payments?
+                                         </div>
+                                          <div class="collapsible-body od11" style="display: none; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px; line-height: 25px;">
+                                             <p>
+                                                    There is a daily limit of 1 lac rupees and a weekly limit of Rs. 2 Lacs rupees.
+                                                    <br>
+                                             </p>
+                                                </div>
+                                                </li>
+                                                <li class="successQ" style="transform: translateX(0px); opacity: 1;">
+                                                 <div class="collapsible-header oh12">
+                                                 <img class="svgClass" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3fNhw6nRgpQh3Fc4ekyf4U5YfnlBlYsJLOZVZssTAC53Ty4xxbQ" alt="">
+                                                 Can I take a payment amount over 1 lac through Pay with IndiaMART?
+                                                   </div>
+                                                <div class="collapsible-body od12" style="display: none; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px; line-height: 25px;">
+                                                  <p>
+                                                        Yes, you can take payment over 1 lac after verification. To know more please call us at 080-61-858-860 to increase your limit.
+                                                        <br>
+                                                  </p>
+                                              </div>
+                                           </li>
+                                                                                    
+                                        </ul>
+                                    </div>
+                                    
+                                    <script>
+                                        $(document).ready(function(){
+                                            $(".gh2").click(function(){
+                                                $(".hhh2").toggle("slide");
+                                                
+                                            });
+                                        });
+                                    </script>
+
+                                    <div class="collapsible-header gh2">
+                                        <img class="svgClass" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3fNhw6nRgpQh3Fc4ekyf4U5YfnlBlYsJLOZVZssTAC53Ty4xxbQ" alt="">
+                                    Managing Payments
+                                    </div>
+                                    <div class="container3 hhh2">
+                                        <ul id="getting-started" class="collapsible" data-collapsible="expandable" style="display: block;">
+                                        <li class="successQ" style="transform: translateX(0px); opacity: 1;">
+                                        <div class="collapsible-header oh13">
+                                            <img class="svgClass" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3fNhw6nRgpQh3Fc4ekyf4U5YfnlBlYsJLOZVZssTAC53Ty4xxbQ" alt="">
+                                            Do I have access to my payments?
+                                        </div>
+                                        <div class="collapsible-body od13" style="display: none; padding-top: 0px; padding-bottom: 0px;
+                                        margin-bottom: 0px; line-height: 25px;">
+                                        <p>
+                                            Yes, you can go through the payments you have received in the tab "Payments Received" on your dashboard. You can also download the invoices using "Download Receipts" tab or "Download Receipt" inside the description of every invoice.
+                                            <br>
+                                            <br>
+                                            <img class="screenshots" src="https://paywith.indiamart.com/help/img/received.png">
+                                        </p>
+                                        </div>
+                                        <div class="collapsible-header oh14">
+                                            <img class="svgClass" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3fNhw6nRgpQh3Fc4ekyf4U5YfnlBlYsJLOZVZssTAC53Ty4xxbQ" alt="">
+                                            Where can I see My Invoices?
+                                        </div>
+                                        <div class="collapsible-body od14" style="display: none; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px; line-height: 25px;">
+                                            <p>
+                                                Open "My invoices" tab on seller dashboard to find a list of all the 'Paid' or 'Pending' invoices.You can also download the invoices using "Download Invoices" tab or "Download Invoice" inside the description of every invoice. 
+                                            <br>
+                                            <br>
+                                            <img class="screenshots" src="https://paywith.indiamart.com/help/img/invoices.png">
+                                            </p>
+                                        </div>
+                                        <div class="collapsible-header oh15">
+                                            <img class="svgClass" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3fNhw6nRgpQh3Fc4ekyf4U5YfnlBlYsJLOZVZssTAC53Ty4xxbQ" alt="">
+                                            Are My Payouts recorded?
+                                        </div>
+                                        <div class="collapsible-body od15" style="display: none; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px; line-height: 25px;">
+                                        <p>
+                                            To check your payouts please check “My Payouts” screen on your dashboard. You can also find the Net Amount paid by Pay with IndiaMART and the respective tax breakup for every payout sent.
+                                            <br>
+                                            <br>
+                                            <img class="screenshots" src="https://paywith.indiamart.com/help/img/disbursed.png">
+                                        </p>
+                                        </div>
+                                    </div>
+
+
+
+                                </li>
+                            </ul>
+                            </div>
+
+                           
+                            
+                           
+                           
+                           
+                           
+                           
+                        
+                    </div>
+                </div>
+
+                </div>
+                <div id="footerContent" class="footer-container">
+                    <footer class="wrapper">
+                        <h3>
+                            2019 &copy;
+                            <a style="text-decoration: none; color: rgba(0, 0, 0, 0.9);">Pay with HelloTravel Pvt. Ltd.</a>
+                            |
+                            <a href="" style="text-decoration: none; color: #000" target="_blank">Terms & Conditions</a>
+                            |
+                            <a href="" style="text-decoration: none; color: #000" target="_blank">Privacy Policy</a>       
+                           </h3>
+                    </footer>
+                </div>
+
+        </div>
+    </body>
+</html>
